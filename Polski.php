@@ -12,29 +12,12 @@
     </header>
     <main>
 <?php
-echo '<main>';
-echo '<div style="text-align: center;">';
-echo '<h1>Matematyka</h1>';
 $login = mysqli_connect('localhost', 'root', '', 'szkola');
 $result = mysqli_query($login, 'SELECT ID, Imie, Nazwisko, Ocena FROM uczniowie');
-echo "<table>";
-echo "<tr>";
-echo "<th>id</th>";
-echo "<th>imie</th>";
-echo "<th>nazwisko</th>";
-echo "<th>ocena</th>";
-echo "</tr>";
 while ($row = mysqli_fetch_assoc($result)) {
-    echo "<tr>";
-    echo "<td>" . $row['ID'] . "</td>";
-    echo "<td>" . $row['Imie'] . "</td>";
-    echo "<td>" . $row['Nazwisko'] . "</td>";
-    echo "<td>" . $row['Ocena'] . "</td>";
-    echo "</tr>";
+    echo "<div>" . $row['ID']  . $row['Imie'] . $row['Nazwisko']  . $row['Ocena'] . "</div>";
+
 }
-echo "</table>";
-echo '</div>';
-echo '</main>';
 ?>
 </main>
     </main>
