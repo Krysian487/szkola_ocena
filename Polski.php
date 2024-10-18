@@ -17,7 +17,7 @@
             echo '<div style="text-align: center;">';
             echo '<h1>Język Polski</h1>';
             $login = mysqli_connect('localhost', 'root', '', 'szkola');
-            $result = mysqli_query($login, 'SELECT ID, Imie, Nazwisko, Ocena FROM uczniowie');
+            $result = mysqli_query($login, 'SELECT ID, Imie, Nazwisko, Ocena FROM polski');
             while ($row = mysqli_fetch_assoc($result)) {
                 echo "<div id='blok'> Nr: " . $row['ID'] .
                 "<br>" . " imie: " . $row['Imie'] .
@@ -30,9 +30,9 @@
 </main>
 <nav>
     <ul>
-        <li><a href="index.php">Matematyka</a></li>
+        <li><a href="matematyka.php">Matematyka</a></li>
         <li><a href="polski.php">J. Polski</a></li>
-        <li>J. Angielski</li>
+        <li><a href="dodaj.php">dodaj ocene</a></li>
 
 </nav>
     <footer>

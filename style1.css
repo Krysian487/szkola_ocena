@@ -7,7 +7,7 @@ body{
     font-family: Arial, sans-serif;
 }
 header{
-    background-color: #a30000;
+    background-color: #333;
     color: white;
     text-align: center;
     height: 120px;
@@ -15,20 +15,20 @@ header{
 }
 main{
     display: flex;
-    background-color: #022929;
+    background-color: #90FFFF;
     height: 400px;
     width: 70%;
     float: left;
     justify-content: center;
 }
 nav{
-    background-color: #3a0147;
+    background-color: #F0aFFF;
     height: 400px;
     width: 30%;
     float: left;
 }
 footer{
-    background-color: #360636;
+    background-color: #F00FF0;
     height: 60px;
     clear: both;
     text-align: center;
